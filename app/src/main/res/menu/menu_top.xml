@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!-- -->
+<!-- Notacion @id +-->
+
+
+<item android:id="@+id/btnBuscar_MenuTop"
+    android:title="buscar"
+    android:icon="@drawable/buscar_menutop"
+    app:showAsAction="always"/>
+
+    <item android:id="@+id/btnMenu_MenuTop"
+        android:title="menu"
+        android:icon="@drawable/menu_menutop"
+        app:showAsAction="always"/>
+
+
+</menu>

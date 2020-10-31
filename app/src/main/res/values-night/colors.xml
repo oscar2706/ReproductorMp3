@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EAEDF0</color>
+    <color name="colorPrimaryDark">#CFD8DC</color>
+    <color name="colorAccent">#FAAB1A</color>
+    <color name="colorAccent_">#EE6DD8</color>
+
+
+    <color name="colorGrisInhabilitado">#CFD8DC</color>
+    <color name="colorGrisLetrasBajitas">#90A4AE</color>
+    <color name="colorGrisBajito">#B4C1CC</color>
+
+    <color name="colorGrisBajitoLineas">#384B57</color>
+    <color name="colorGrisMenusTopBottom">#31394D</color>
+    <color name="colorFondos">#242A38</color>
+
+
+
+
+</resources>

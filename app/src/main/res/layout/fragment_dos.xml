@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DosFragment"
+    android:background="@drawable/fondo_degradado"
+    android:id="@+id/viewpagerF2">
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:id="@+id/txvTextFragmentDos"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fragmento 2"/>-->
+
+    <RelativeLayout
+    android:id="@+id/barraAltaF2"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorGrisMenusTopBottom">
+
+    <ImageButton
+        android:id="@+id/botonOrdenarArtistas"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/btn_ordenar"
+        android:background="@color/colorGrisMenusTopBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+
+        />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerID2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"/>
+
+</FrameLayout>

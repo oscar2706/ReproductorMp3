@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UnoFragment"
+    android:background="@drawable/fondo_degradado">
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:id="@+id/txvTextFragmentUno"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fragmento 1"/>
+        -->
+
+    <RelativeLayout
+        android:id="@+id/barraAlta"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorGrisMenusTopBottom">
+
+        <ImageButton
+            android:id="@+id/botonOrdenarCanciones"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_ordenar"
+            android:background="@color/colorGrisMenusTopBottom"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/botonReproducirAleatorio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/btn_aleatorio"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorGrisMenusTopBottom"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"/>
+
+
+
+    <!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/song_photo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/song_name"
+                android:layout_toRightOf="@+id/song_photo"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/song_artist"
+                android:layout_toRightOf="@+id/song_photo"
+                android:layout_below="@+id/song_name"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    -->
+
+</FrameLayout>

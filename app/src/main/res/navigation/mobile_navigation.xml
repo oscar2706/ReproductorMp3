@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/unoFragment">
+    <fragment
+        android:id="@+id/unoFragment"
+        android:name="com.example.bottomtabbed.fragments.UnoFragment"
+        android:label="fragment_uno"
+        tools:layout="@layout/fragment_uno" >
+        <action
+            android:id="@+id/action_unoFragment_to_reproductorFragment"
+            app:destination="@id/reproductorFragment"
+            app:enterAnim="@anim/bottom_to_up"
+            app:popExitAnim="@anim/bottom_to_up2" />
+    </fragment>
+    <fragment
+        android:id="@+id/reproductorFragment"
+        android:name="com.example.bottomtabbed.fragments.ReproductorFragment"
+        android:label="ReproductorFragment" >
+        <action
+            android:id="@+id/action_reproductor_to_nowPlaying"
+            app:destination="@id/nowPlayingFragment"
+            app:exitAnim="@anim/push_left_out"
+            app:popEnterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/dosFragment"
+        android:name="com.example.bottomtabbed.fragments.DosFragment"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" />
+    <fragment
+        android:id="@+id/tresFragment"
+        android:name="com.example.bottomtabbed.fragments.TresFragment"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" />
+    <fragment
+        android:id="@+id/nowPlayingFragment"
+        android:name="com.example.bottomtabbed.fragments.nowPlayingFragment"
+        android:label="fragment_now_playing"
+        tools:layout="@layout/fragment_now_playing" />
+</navigation>

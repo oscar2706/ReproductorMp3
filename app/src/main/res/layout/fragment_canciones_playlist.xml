@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CancionesPlaylist"
+    android:background="@drawable/fondo_degradado">
+
+    <LinearLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/barraAltaCancionesPlaylist"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorGrisMenusTopBottom"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/regresarPlaylists"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/regresarplaylists"
+                    android:background="@color/colorGrisMenusTopBottom"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barraDetallePlaylist"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrisMenusTopBottom"
+                android:layout_below="@+id/barraAltaCancionesPlaylist"
+                android:clickable="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/playlistImageGrad"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/playlists"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/idImageArtist"
+                        >
+
+                        <TextView
+                            android:id="@+id/infoPlaylistName"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Nombre Playlist"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/infoPlaylistNSongs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3 Canciones"
+                            android:gravity="center"
+                            android:textColor="@color/colorGrisInhabilitado"
+                            />
+                        <TextView
+                            android:id="@+id/infoPlaylistDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="Duración: 8:46"
+                            android:gravity="center"
+                            android:textColor="@color/colorGrisInhabilitado"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/infoPlaylistDuration"
+                    android:backgroundTint="@color/colorGrisBajitoLineas"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCancionesPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barra"
+        android:layout_marginTop="170dp"
+        />
+
+</FrameLayout>

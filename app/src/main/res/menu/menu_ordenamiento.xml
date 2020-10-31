@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ordenar por:"
+        android:enabled="false"
+        />
+
+    <item android:id="@+id/asc_nombre"
+        android:title="Nombre cancion (A - Z)"
+        />
+
+    <item android:id="@+id/desc_nombre"
+        android:title="Nombre cancion (Z - A)"
+        />
+
+    <item android:id="@+id/asc_artista"
+        android:title="Nombre artista (A - Z)"
+        />
+
+    <item android:id="@+id/desc_artista"
+        android:title="Nombre artista (Z- A)"
+        />
+</menu>
